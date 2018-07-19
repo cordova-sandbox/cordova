@@ -5,8 +5,6 @@
 1. run `npm i -g ios-deploy`
 
 ### Then:
-1. run `cordova platform rm ios` in terminal
-1. run `cordova plugin rm cordova-plugin-firebase cordova-plugin-geolocation cordova-plugin-inappbrowser cordova-plugin-whitelist cordova-plugin-device`
 1. run `cordova platform add ios`
 1. run `cordova plugin add cordova-plugin-firebase cordova-plugin-geolocation cordova-plugin-inappbrowser cordova-plugin-whitelist cordova-plugin-device`
 1. in javascript project, include and run script to build to cordova/www directory
