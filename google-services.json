@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1041792768940",
+    "firebase_url": "https://jdre-production.firebaseio.com",
+    "project_id": "jdre-production",
+    "storage_bucket": "jdre-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041792768940:android:848f1e38f50b6ca8",
+        "android_client_info": {
+          "package_name": "com.JDRE.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041792768940-shet64gssp45ofk4r53ubadrnc97jni8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFVi18bxXPx43mWdY3V0WZbZrkOEmh7EI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
