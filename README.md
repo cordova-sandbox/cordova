@@ -36,4 +36,4 @@ In order to get dev tools:
 
 ## Usefull tips/solutions:
 1. When building for IOS, you might exprience delay when clicking on buttons or input fields. especcially on IOS 11.3 / .4 the solution that worked for us was to install this fork of fastclick npm package: https://github.com/lasselaakkonen/fastclick.   To install a fork run the following in you app : `npm i lasselaakkonen/fastclick` 
-1. to add icons for ios and android, use https://github.com/AlexDisler/cordova-icon
+1. to add icons for ios and android, use and follow https://github.com/AlexDisler/cordova-icon
