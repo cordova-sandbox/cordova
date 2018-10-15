@@ -1,23 +1,35 @@
-follow : https://codesundar.com/lesson/publish-cordova-apps-to-playstore/
+# Build an Android Cordova app
 
-delete previous final and JDRE.apk
+## To build Android app to phone for tests
 
-if switching from IOS build go to Firebase console/ setting/ general and download/make a googleService-info.plist and add it in the root folder of cordova project
+1. Navigate to the app folder under JDRE
 
-Change id in config.xml to id="com.JDRE.android"
+1. `npm run build-cordova`
 
-!!!!change versions!!!!
+1. Then come back to this folder and
 
-commands:
-cordova build --release android
+1. `cordova build android`
 
-the path for new APK will be platforms/android/app/build/outputs/apk/release
+## Guide to deploy an android App : <https://codesundar.com/lesson/publish-cordova-apps-to-playstore/>
 
-rename unasigned release to JDRE.apk
+1. Delete previous final and JDRE.apk
 
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore JDRE.keystore JDRE.apk JDRE
+1. * If switching from IOS build go to Firebase console/ setting/ general and download/make a googleService-info.plist and add it in the root folder of cordova project
 
-jarsigner: Eightletters1  
+1. Change id in config.xml to id="com.JDRE.android"
 
+1. Make sure to change versions!!!!
 
-./zipalign -v 4 JDRE.apk JDRE-final.apk
+1. Then commands
+
+    * `cordova build --release android`
+
+    * the path for new APK will be platforms/android/app/build/outputs/apk/release
+
+    * rename unasigned release to JDRE.apk
+
+    * `jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore JDRE.keystore JDRE.apk JDRE`
+
+    * `jarsigner: Eightletters1`  
+
+    * ./zipalign -v 4 JDRE.apk JDRE-final.apk
