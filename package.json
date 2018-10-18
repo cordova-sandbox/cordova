@@ -1,8 +1,8 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloCordova",
+    "name": "jdre-cordova-app",
+    "displayName": "JDRE Cordova app",
     "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "A subscription based real estate app",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "cordova-android": "^7.0.0",
+        "cordova-android": "^7.1.1",
         "cordova-ios": "^4.5.5",
         "cordova-plugin-device": "^2.0.2",
         "cordova-plugin-firebase": "^1.0.5",
