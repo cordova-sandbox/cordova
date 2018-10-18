@@ -12,6 +12,20 @@
 
 ## Guide to deploy an android App : <https://codesundar.com/lesson/publish-cordova-apps-to-playstore/>
 
+## A Npm scripts way to do it :)
+
+1. Confirm that the id in config.xml is set to id="com.JDRE.android" then make sure to change versions!!!!
+
+1. `npm run release`
+
+1. type the keystore password: `Eightletters1`
+
+1. `npm run zip`
+
+1. Then go to the play store Deploy section
+
+## Longhand way
+
 1. Delete previous final and JDRE.apk
 
 1. If switching from IOS build go to Firebase console/ setting/ general and download/make a googleService-info.plist and add it in the root folder of cordova project
@@ -38,13 +52,15 @@
 
     * ./zipalign -v 4 JDRE.apk JDRE-final.apk
 
+## Play store Deploy
+
 1. Then open the google play store console
 
-1. Go to release management, App releases
+1. Go to release management, App releases, Edit Release
 
 1. In the 'Android App Bundles and APKs to add' section click browse files and add the 'JDRE-final.apk'
 
-1. Review all other items on the from, then at the bottom click 'Review'
+1. Put a summary of what you changed in the 'What's new in this release?' section, then click save, then click review
 
 1. Then after reviewing all items click 'START ROLLOUT TO PRODUCTION'
 

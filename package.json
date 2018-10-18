@@ -5,7 +5,14 @@
     "description": "A subscription based real estate app",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "remove": "rm JDRE.apk && rm JDRE-final.apk",
+        "build": "cordova build --release android",
+        "move": "mv ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./",
+        "rename": "mv app-release-unsigned.apk JDRE.apk",
+        "sign": "jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore JDRE.keystore JDRE.apk JDRE",
+        "release": "npm run remove && npm run build && npm run move && npm run rename && npm run sign",
+        "zip": "./zipalign -v 4 JDRE.apk JDRE-final.apk"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
