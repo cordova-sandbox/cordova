@@ -10,6 +10,8 @@
 
 1. `cordova build android`
 
+1. `cordova run android`
+
 ## Guide to deploy an android App : <https://codesundar.com/lesson/publish-cordova-apps-to-playstore/>
 
 ## A Npm scripts way to do it :)
